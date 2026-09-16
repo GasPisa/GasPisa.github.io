@@ -15,7 +15,9 @@ const translations = {
     menu: { toggleAria: 'Abrir menú' },
     hero: {
       role: 'Ingeniero de software',
-      scrollAria: 'Scroll hacia abajo'
+      scrollAria: 'Scroll hacia abajo',
+      cvButton: 'Solicitar CV',
+      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=Solicitud%20de%20CV%20-%20Gaspar%20Pisa%20Eyaralar&body=Hola%20Gaspar%2C%0A%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20tu%20experiencia.%20%C2%BFPodr%C3%ADas%20enviarme%20tu%20CV%20actualizado%3F%0A%0ASaludos%2C'
     },
     expertise: {
       eyebrow: 'Qué hago',
@@ -99,7 +101,9 @@ const translations = {
     menu: { toggleAria: 'Open menu' },
     hero: {
       role: 'Software Engineer',
-      scrollAria: 'Scroll down'
+      scrollAria: 'Scroll down',
+      cvButton: 'Request CV',
+      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=CV%20Request%20-%20Gaspar%20Pisa%20Eyaralar&body=Hi%20Gaspar%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20learn%20more%20about%20your%20experience.%20Could%20you%20send%20me%20your%20updated%20CV%3F%0A%0ABest%20regards%2C'
     },
     expertise: {
       eyebrow: 'What I do',
