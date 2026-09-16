@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Gaspar Pisa Eyaralar — Portfolio</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Gaspar Pisa Eyaralar — Ingeniero de software especializado en videojuegos y desarrollo mobile. Portfolio de proyectos y experiencia." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="logo">[GP]<span class="logo-dot">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link" data-i18n="nav.home">Inicio</a>
+        <a href="#expertise" class="nav-link" data-i18n="nav.expertise">Aptitudes</a>
+        <a href="#work" class="nav-link" data-i18n="nav.work">Proyectos</a>
+        <a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <button id="langToggle" class="lang-toggle" data-i18n-attr="aria-label:lang.toggleAria" aria-label="Switch to English">EN</button>
+        <button id="menuToggle" class="icon-btn menu-btn" data-i18n-attr="aria-label:menu.toggleAria" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>Gaspar Pisa Eyaralar</h1>
+          <h2 class="hero-role" data-i18n="hero.role">Ingeniero de software</h2>
+          <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/gaspar-pisa-eyaralar-aa5b50136/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            </a></li>
+            <li><a href="mailto:gaspar.pisa@gmail.com" aria-label="Email">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#expertise" class="scroll-indicator" data-i18n-attr="aria-label:hero.scrollAria" aria-label="Scroll hacia abajo">↓</a>
+    </section>
+
+    <!-- ===== EXPERTISE ===== -->
+    <section id="expertise" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal" data-i18n="expertise.eyebrow">Qué hago</p>
+        <h2 class="section-title reveal" data-i18n="expertise.title">Aptitudes</h2>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card1.titleAccent">Programación</span>
+              <span data-i18n="expertise.card1.titleRest">de sistemas de juego</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card1.desc">Desarrollo de gameplay, sistemas y herramientas internas en Unity, incluyendo un editor de niveles propio.</p>
+            </div>
+            <ul class="tag-list">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Dear ImGui</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card2.titleAccent">Diseño</span>
+              <span data-i18n="expertise.card2.titleRest">de videojuegos</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card2.desc">Formación de posgrado en diseño de videojuegos, con foco en mecánicas de juego y experiencia de usuario.</p>
+            </div>
+            <ul class="tag-list">
+              <li>Game Design</li>
+              <li>Level Design</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card3.titleAccent">Desarrollo</span>
+              <span data-i18n="expertise.card3.titleRest">móvil</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card3.desc">Construcción de aplicaciones Android e híbridas, con integración de servicios en la nube y pasarelas de pago.</p>
+            </div>
+            <ul class="tag-list">
+              <li>React Native</li>
+              <li>Google Cloud</li>
+              <li>Stripe</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card4.titleAccent">Porting</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card4.desc">Adaptación de videojuegos ya publicados a nuevas plataformas, colaborando con estudios internacionales.</p>
+            </div>
+            <ul class="tag-list">
+              <li>Unity</li>
+              <li>PS5</li>
+              <li>Xbox One</li>
+              <li>Xbox Series</li>
+              <li>Nintendo Switch 1</li>
+              <li>Nintendo Switch 2</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card5.titleAccent">Control</span>
+              <span data-i18n="expertise.card5.titleRest">de calidad</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card5.desc">Testing y control de calidad de videojuegos y software empresarial, desde pruebas exploratorias hasta seguimiento de incidencias.</p>
+            </div>
+            <ul class="tag-list">
+              <li>QA</li>
+              <li>Jira</li>
+              <li>Testing</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal">
+            <h3>
+              <span class="expertise-accent" data-i18n="expertise.card6.titleAccent">Metodologías</span>
+              <span data-i18n="expertise.card6.titleRest">ágiles</span>
+            </h3>
+            <div class="expertise-desc">
+              <p data-i18n="expertise.card6.desc">Trabajo en equipos multidisciplinares con metodologías ágiles, planificación iterativa y entrega incremental.</p>
+            </div>
+            <ul class="tag-list">
+              <li>Desarrollo Incremental</li>
+              <li>Manifiesto Ágil</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK / PROYECTOS ===== -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal" data-i18n="work.eyebrow">Portfolio</p>
+        <h2 class="section-title reveal" data-i18n="work.title">Proyectos</h2>
+        <p class="section-desc reveal" data-i18n="work.desc">Una selección de proyectos en los que trabajé: desde videojuegos publicados hasta aplicaciones móviles y sistemas empresariales.</p>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all" data-i18n="work.filterAll">Todos</button>
+          <button class="filter-btn" data-filter="programming" data-i18n="work.filterProgramming">Programación</button>
+          <button class="filter-btn" data-filter="porting" data-i18n="work.filterPorting">Porting</button>
+          <button class="filter-btn" data-filter="qa" data-i18n="work.filterQa">QA</button>
+          <button class="filter-btn" data-filter="mobile" data-i18n="work.filterMobile">Móvil</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card reveal" data-category="programming">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1529180/capsule_616x353.jpg?t=1726814588" alt="Deck RX: The Deckbuilding Racing Game" loading="lazy" />
+            <div class="project-body">
+              <h3>Deck RX: The Deckbuilding Racing Game</h3>
+              <p data-i18n="work.p1.desc">Programación de sistemas de juego para este roguelike de carreras y construcción de mazos, desarrollado en Meteorbyte Studios. Actualmente en desarrollo.</p>
+              <ul class="tag-list small">
+                <li>Unity</li><li>C#</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/1529180/Deck_RX_The_Deckbuilding_Racing_Game/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="programming">
+            <img class="project-thumb" src="assets/projects/circuit-editor-deckrx.png" alt="Editor de circuitos para Deck RX" loading="lazy" />
+            <div class="project-body">
+              <h3 data-i18n="work.p14.title">Editor de circuitos para Deck RX</h3>
+              <p data-i18n="work.p14.desc">Trabajo de Fin de Grado: editor de circuitos para Deck RX, con interfaz gráfica para crear y editar circuitos, exportados en formato JSON. Desarrollado para Meteorbyte Studios.</p>
+              <ul class="tag-list small">
+                <li>Unity</li><li>C#</li><li>JSON</li><li>Dear ImGui</li>
+              </ul>
+              <span class="project-link" data-i18n="work.academic">Proyecto académico</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="qa">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2603300/435ce70cdd5e77ae30edaae0936a240b8e49048c/capsule_616x353.jpg?t=1742582996" alt="Songs of Steel: Hispania" loading="lazy" />
+            <div class="project-body">
+              <h3>Songs of Steel: Hispania</h3>
+              <p data-i18n="work.p2.desc">Control de calidad para esta estrategia por turnos ambientada en las Guerras Numantinas, desarrollada en Meteorbyte Studios.</p>
+              <ul class="tag-list small">
+                <li>QA</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/2603300/Songs_of_Steel_Hispania/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting programming">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3293260/732cdbfce458c5e31a96a7e287eb22b01ee2003d/capsule_616x353_alt_assets_5.jpg?t=1787323953" alt="Waterpark Simulator" loading="lazy" />
+            <div class="project-body">
+              <h3>Waterpark Simulator</h3>
+              <p data-i18n="work.p3.desc">Desarrollo de funcionalidades de modo multijugador para este simulador de gestión de parques acuáticos.</p>
+              <ul class="tag-list small">
+                <li>Unity</li><li>C#</li><li>Multiplayer</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/3293260/Waterpark_Simulator/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/capsule_616x353.jpg?t=1746172589" alt="Five Nights at Freddy's: Into the Pit" loading="lazy" />
+            <div class="project-body">
+              <h3>Five Nights at Freddy's: Into the Pit</h3>
+              <p data-i18n="work.p4.desc">Trabajo de porting de este título del universo Five Nights at Freddy's, desarrollado por Mega Cat Studios.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/2638370/Five_Nights_at_Freddys_Into_the_Pit/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="qa">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2008510/0c792f16697f95fe3b0a6a0f83cd7ef8483a1f75/capsule_616x353.jpg?t=1770294881" alt="Go Mecha Ball" loading="lazy" />
+            <div class="project-body">
+              <h3>Go Mecha Ball</h3>
+              <p data-i18n="work.p5.desc">Control de calidad para este shooter roguelike con física de pinball, desarrollado por Whale Peak Games.</p>
+              <ul class="tag-list small">
+                <li>QA</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/2008510/Go_Mecha_Ball/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="qa">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2238040/capsule_616x353.jpg?t=1783069296" alt="Tiny Terry's Turbo Trip" loading="lazy" />
+            <div class="project-body">
+              <h3>Tiny Terry's Turbo Trip</h3>
+              <p data-i18n="work.p6.desc">Control de calidad para esta aventura de mundo abierto, desarrollada por Snekflat.</p>
+              <ul class="tag-list small">
+                <li>QA</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/2238040/Tiny_Terrys_Turbo_Trip/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1002260/capsule_616x353.jpg?t=1752083865" alt="Ruffy and the Riverside" loading="lazy" />
+            <div class="project-body">
+              <h3>Ruffy and the Riverside</h3>
+              <p data-i18n="work.p7.desc">Trabajo de porting de este juego de acción y exploración en mundo abierto, desarrollado por Zockrates Laboratories.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/1002260/Ruffy_and_the_Riverside/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3461800/d62cbff947c06eae0e811217f397dbcbe59325c2/capsule_616x353.jpg?t=1770200729" alt="Devil Jam" loading="lazy" />
+            <div class="project-body">
+              <h3>Devil Jam</h3>
+              <p data-i18n="work.p8.desc">Trabajo de porting de este roguelite musical de disparos, desarrollado por Rogueside.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/3461800/Devil_Jam/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3293010/d6c4ab7b057ebf4af98f8ebc5a713590e9da95fa/capsule_616x353.jpg?t=1783346058" alt="Easy Delivery Co." loading="lazy" />
+            <div class="project-body">
+              <h3>Easy Delivery Co.</h3>
+              <p data-i18n="work.p9.desc">Trabajo de porting de este simulador de entregas, desarrollado por Oro Interactive.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/3293010/Easy_Delivery_Co/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1411970/capsule_616x353.jpg?t=1773939586" alt="Avian Knights" loading="lazy" />
+            <div class="project-body">
+              <h3>Avian Knights</h3>
+              <p data-i18n="work.p10.desc">Trabajo de porting de este juego arcade multijugador, desarrollado por Alan-1.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/1411970/Avian_Knights/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="porting">
+            <img class="project-thumb" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2783370/9d52088084400b9b87d5d78aa0bb6898e94bbb13/capsule_616x353.jpg?t=1784279922" alt="Teeto" loading="lazy" />
+            <div class="project-body">
+              <h3>Teeto</h3>
+              <p data-i18n="work.p11.desc">Trabajo de porting de este plataformas 3D, desarrollado por Eat Pant Games.</p>
+              <ul class="tag-list small">
+                <li>Porting</li>
+              </ul>
+              <a href="https://store.steampowered.com/app/2783370/Teeto/" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewSteam">Ver en Steam →</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="mobile programming">
+            <div class="project-thumb logo-thumb">
+              <img class="app-icon-thumb" src="assets/projects/eterna-diagnostics.png" alt="Eterna Diagnostics" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="work.p12.title">Eterna Diagnostics — App de salud</h3>
+              <p data-i18n="work.p12.desc">Prototipo de aplicación Android conectada a smartwatches para métricas de salud, con inicio de sesión con Google e integración de pagos con Stripe.</p>
+              <ul class="tag-list small">
+                <li>React Native</li><li>Google Cloud</li><li>Stripe</li>
+              </ul>
+              <span class="project-link" data-i18n="work.private">Proyecto privado</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="qa">
+            <img class="project-thumb logo-thumb" src="https://www.ricoh.es/images/ricoh-logo.svg" alt="Ricoh España" loading="lazy" />
+            <div class="project-body">
+              <h3 data-i18n="work.p13.title">QA — Sistema de hipotecas bancario</h3>
+              <p data-i18n="work.p13.desc">Control de calidad de un sistema de hipotecas para un banco, incluyendo el flujo de reporte y seguimiento de incidencias, en Ricoh España.</p>
+              <ul class="tag-list small">
+                <li>QA</li><li>Jira</li><li>Testing</li>
+              </ul>
+              <span class="project-link" data-i18n="work.private">Proyecto privado</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal" data-i18n="experience.eyebrow">Trayectoria</p>
+        <h2 class="section-title reveal" data-i18n="experience.title">Experiencia</h2>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-i18n="experience.job1.role">Ingeniero de software</h3>
+                <span class="timeline-date" data-i18n="experience.job1.date">Abr. 2024 — Sep. 2026</span>
+              </div>
+              <p class="timeline-company">Meteorbyte Studios</p>
+              <p data-i18n="experience.job1.desc">Participación en más de diez videojuegos publicados, entre ellos Five Nights at Freddy's: Into the Pit y Waterpark Simulator (porting con modo multijugador), integrando APIs específicas de consolas y móviles.</p>
+              <ul class="tag-list small">
+                <li>Unity</li><li>C#</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-i18n="experience.job2.role">Desarrollador de aplicaciones</h3>
+                <span class="timeline-date" data-i18n="experience.job2.date">Ago. 2023 — Dic. 2023</span>
+              </div>
+              <p class="timeline-company">Eterna Diagnostics</p>
+              <p data-i18n="experience.job2.desc">Desarrollo de un prototipo de aplicación Android conectada con relojes inteligentes para ofrecer métricas de salud, con inicio de sesión mediante Google e integración de la pasarela de pagos Stripe.</p>
+              <ul class="tag-list small">
+                <li>React Native</li><li>Google Cloud</li><li>Stripe</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 data-i18n="experience.job3.role">Control de calidad</h3>
+                <span class="timeline-date" data-i18n="experience.job3.date">Ago. 2019 — Ene. 2020</span>
+              </div>
+              <p class="timeline-company">Ricoh España</p>
+              <p data-i18n="experience.job3.desc">QA del sistema de hipotecas de un banco, con flujo de reporte y seguimiento de incidencias.</p>
+              <ul class="tag-list small">
+                <li>QA</li><li>Jira</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="education reveal">
+          <h3 data-i18n="education.title">Formación académica</h3>
+          <ul class="education-list">
+            <li>
+              <strong data-i18n="education.degree1">Máster en Diseño de Videojuegos</strong>
+              <span>Universidad Complutense de Madrid</span>
+            </li>
+            <li>
+              <strong data-i18n="education.degree2">Grado en Ingeniería Informática del Software</strong>
+              <span>Universidad de Oviedo</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal" data-i18n="testimonials.eyebrow">Recomendaciones</p>
+        <h2 class="section-title reveal" data-i18n="testimonials.title">Lo que dicen de mí</h2>
+
+        <div class="testimonial-carousel reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <blockquote class="testimonial-card active">
+              <p data-i18n="testimonials.quote1">“Recomiendo a Gaspar si necesitan un ingeniero responsable y con capacidad de integrarse rápido en el día a día de un equipo.”</p>
+              <footer>
+                <strong data-i18n="testimonials.name1">Felipe González Fanjul</strong>
+                <span data-i18n="testimonials.role1">Director, Meteorbyte Studios</span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p data-i18n="testimonials.quote2">“[Cita del testimonio 2.]”</p>
+              <footer>
+                <strong data-i18n="testimonials.name2">[Nombre]</strong>
+                <span data-i18n="testimonials.role2">[Cargo, Empresa]</span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p data-i18n="testimonials.quote3">“[Cita del testimonio 3.]”</p>
+              <footer>
+                <strong data-i18n="testimonials.name3">[Nombre]</strong>
+                <span data-i18n="testimonials.role3">[Cargo, Empresa]</span>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="testimonial-controls">
+            <button id="testimonialPrev" class="icon-btn" data-i18n-attr="aria-label:testimonials.prevAria" aria-label="Testimonio anterior">←</button>
+            <div class="testimonial-dots" id="testimonialDots"></div>
+            <button id="testimonialNext" class="icon-btn" data-i18n-attr="aria-label:testimonials.nextAria" aria-label="Siguiente testimonio">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <p class="section-eyebrow reveal" data-i18n="contact.eyebrow">Contacto</p>
+        <a href="mailto:gaspar.pisa@gmail.com" class="btn btn-primary btn-lg reveal">gaspar.pisa@gmail.com</a>
+
+        <ul class="social-links contact-social reveal">
+          <li><a href="https://www.linkedin.com/in/gaspar-pisa-eyaralar-aa5b50136/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+          </a></li>
+          <li><a href="mailto:gaspar.pisa@gmail.com" aria-label="Email">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Gaspar Pisa Eyaralar</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero-particles.js"></script>
+</body>
+</html>
