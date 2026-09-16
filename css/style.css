@@ -460,15 +460,6 @@ img.logo-thumb {
 
 /* ============ Testimonials ============ */
 .testimonial-carousel { max-width: 720px; margin: 40px auto 0; text-align: center; }
-.testimonial-track { position: relative; min-height: 200px; }
-.testimonial-card {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease;
-}
-.testimonial-card.active { opacity: 1; visibility: visible; position: relative; }
 .testimonial-card p {
   font-size: 1.2rem;
   font-weight: 500;
@@ -477,25 +468,6 @@ img.logo-thumb {
 }
 .testimonial-card footer strong { display: block; }
 .testimonial-card footer span { color: var(--text-muted); font-size: 0.9rem; }
-
-.testimonial-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 24px;
-}
-.testimonial-dots { display: flex; gap: 8px; }
-.testimonial-dots button {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: var(--border);
-  cursor: pointer;
-  padding: 0;
-  transition: background var(--transition), transform var(--transition);
-}
-.testimonial-dots button.active { background: var(--accent); transform: scale(1.3); }
 
 /* ============ Contact ============ */
 .contact-section { text-align: center; }
