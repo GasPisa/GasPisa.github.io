@@ -80,5 +80,29 @@ filterButtons.forEach((btn) => {
   });
 });
 
+// ============ Testimonial carousel ============
+const testimonialCards = document.querySelectorAll('.testimonial-card');
+const testimonialDotsWrap = document.getElementById('testimonialDots');
+const prevBtn = document.getElementById('testimonialPrev');
+const nextBtn = document.getElementById('testimonialNext');
+let testimonialIndex = 0;
+
+testimonialCards.forEach((_, i) => {
+  const dot = document.createElement('button');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => showTestimonial(i));
+  testimonialDotsWrap.appendChild(dot);
+});
+const testimonialDots = testimonialDotsWrap.querySelectorAll('button');
+
+function showTestimonial(index) {
+  testimonialIndex = (index + testimonialCards.length) % testimonialCards.length;
+  testimonialCards.forEach((card, i) => card.classList.toggle('active', i === testimonialIndex));
+  testimonialDots.forEach((dot, i) => dot.classList.toggle('active', i === testimonialIndex));
+}
+
+prevBtn.addEventListener('click', () => showTestimonial(testimonialIndex - 1));
+nextBtn.addEventListener('click', () => showTestimonial(testimonialIndex + 1));
+
 // ============ Footer year ============
 document.getElementById('year').textContent = new Date().getFullYear();

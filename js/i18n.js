@@ -71,7 +71,12 @@ const translations = {
       title: 'Lo que dicen de mí',
       quote1: '“Recomiendo a Gaspar si necesitan un ingeniero responsable y con capacidad de integrarse rápido en el día a día de un equipo.”',
       name1: 'Felipe González Fanjul',
-      role1: 'Director, Meteorbyte Studios'
+      role1: 'Director, Meteorbyte Studios',
+      quote2: '“Gaspar es un gran profesional, con muy buena comunicación con el equipo y capacidad para resolver problemas.”',
+      name2: 'Fabio',
+      role2: 'Programador, Meteorbyte Studios',
+      prevAria: 'Testimonio anterior',
+      nextAria: 'Siguiente testimonio'
     },
     contact: {
       eyebrow: 'Contacto'
@@ -150,7 +155,12 @@ const translations = {
       title: 'What people say about me',
       quote1: '“I recommend Gaspar if you need a responsible engineer who can quickly integrate into a team\'s day-to-day work.”',
       name1: 'Felipe González Fanjul',
-      role1: 'Director, Meteorbyte Studios'
+      role1: 'Director, Meteorbyte Studios',
+      quote2: '“Gaspar is a great professional, with great communication with the team and problem-solving skills.”',
+      name2: 'Fabio',
+      role2: 'Programmer, Meteorbyte Studios',
+      prevAria: 'Previous testimonial',
+      nextAria: 'Next testimonial'
     },
     contact: {
       eyebrow: 'Contact'
