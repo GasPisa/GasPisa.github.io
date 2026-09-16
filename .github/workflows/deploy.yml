@@ -33,7 +33,8 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         continue-on-error: true
         with:
-          args: --no-progress --accept 200,206,403,429 './**/*.html'
+          # 999 is LinkedIn's standard anti-bot response to automated requests, not a real dead link.
+          args: --no-progress --accept 200,206,403,429,999 './**/*.html'
 
   deploy:
     needs: validate
