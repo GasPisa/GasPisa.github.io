@@ -71,7 +71,6 @@ img { max-width: 100%; display: block; }
 .btn-outline { border-color: var(--border); color: var(--text); }
 .btn-outline:hover { border-color: var(--accent); }
 .btn-lg { padding: 16px 32px; font-size: 1.05rem; margin-top: 8px; }
-.cv-btn { margin-top: 28px; }
 
 .icon-btn {
   background: none;

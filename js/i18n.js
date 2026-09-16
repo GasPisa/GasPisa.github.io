@@ -17,7 +17,7 @@ const translations = {
       role: 'Ingeniero de software',
       scrollAria: 'Scroll hacia abajo',
       cvButton: 'Solicitar CV',
-      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=Solicitud%20de%20CV%20-%20Gaspar%20Pisa%20Eyaralar&body=Hola%20Gaspar%2C%0A%0AVi%20tu%20portfolio%20y%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20tu%20experiencia.%20%C2%BFPodr%C3%ADas%20enviarme%20tu%20CV%20actualizado%3F%0A%0ASaludos%2C'
+      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=Solicitud%20de%20CV%20-%20Gaspar%20Pisa%20Eyaralar&body=Hola%20Gaspar%2C%0A%0A%C2%BFPodr%C3%ADas%20enviarme%20tu%20CV%20actualizado%3F%0A%0ASaludos.'
     },
     expertise: {
       eyebrow: 'Qué hago',
@@ -74,8 +74,8 @@ const translations = {
       quote1: '“Recomiendo a Gaspar si necesitan un ingeniero responsable y con capacidad de integrarse rápido en el día a día de un equipo.”',
       name1: 'Felipe González Fanjul',
       role1: 'Director, Meteorbyte Studios',
-      quote2: '“Gaspar es un gran profesional, tiene muy buena comunicación con el equipo y una gran capacidad para resolver problemas.”',
-      name2: 'Fabio',
+      quote2: '“Gaspar es un gran profesional, con muy buena comunicación con el equipo y capacidad de resolución de problemas.”',
+      name2: 'Fabio Cuartas',
       role2: 'Programador, Meteorbyte Studios',
       prevAria: 'Testimonio anterior',
       nextAria: 'Siguiente testimonio'
@@ -103,7 +103,7 @@ const translations = {
       role: 'Software Engineer',
       scrollAria: 'Scroll down',
       cvButton: 'Request CV',
-      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=CV%20Request%20-%20Gaspar%20Pisa%20Eyaralar&body=Hi%20Gaspar%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20learn%20more%20about%20your%20experience.%20Could%20you%20send%20me%20your%20updated%20CV%3F%0A%0ABest%20regards%2C'
+      cvHref: 'mailto:gaspar.pisa@gmail.com?subject=CV%20Request%20-%20Gaspar%20Pisa%20Eyaralar&body=Hi%20Gaspar%2C%0A%0ACould%20you%20send%20me%20your%20updated%20CV%3F%0A%0ABest%20regards.'
     },
     expertise: {
       eyebrow: 'What I do',
@@ -160,8 +160,8 @@ const translations = {
       quote1: '“I recommend Gaspar if you need a responsible engineer who can quickly integrate into a team\'s day-to-day work.”',
       name1: 'Felipe González Fanjul',
       role1: 'Director, Meteorbyte Studios',
-      quote2: '“Gaspar is a great professional, has great communication with the team, and a strong ability to solve problems.”',
-      name2: 'Fabio',
+      quote2: '“Gaspar is a great professional, with great communication with the team and strong problem-solving skills.”',
+      name2: 'Fabio Cuartas',
       role2: 'Programmer, Meteorbyte Studios',
       prevAria: 'Previous testimonial',
       nextAria: 'Next testimonial'
