@@ -2,6 +2,8 @@ name: CI & Deploy
 
 on:
   push:
+    branches: [main, dev]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -36,8 +38,38 @@ jobs:
           # 999 is LinkedIn's standard anti-bot response to automated requests, not a real dead link.
           args: --no-progress --accept 200,206,403,429,999 './**/*.html'
 
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install test dependencies
+        run: pip install -r tests/requirements.txt
+
+      - name: Serve site
+        run: python3 -m http.server 8000 &
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 20); do
+            curl -sf http://localhost:8000/ > /dev/null && exit 0
+            sleep 0.5
+          done
+          echo "Server never became ready" >&2
+          exit 1
+
+      - name: Run Selenium tests
+        env:
+          BASE_URL: http://localhost:8000
+        run: pytest tests/ -v
+
   deploy:
-    needs: validate
+    needs: [validate, e2e]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
