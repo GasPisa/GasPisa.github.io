@@ -77,6 +77,9 @@ const translations = {
       quote2: '“Gaspar es un gran profesional, tiene muy buena comunicación con el equipo y una gran capacidad para resolver problemas.”',
       name2: 'Fabio',
       role2: 'Programador, Meteorbyte Studios',
+      quote3: '“Recomendaría a Gaspar a cualquier equipo que busque un desarrollador comprometido, resolutivo y con capacidad para convertir una idea en un producto real.”',
+      name3: 'Antonio Pérez-Campoamor Manzanaque',
+      role3: 'Cofundador y COO, Eterna Diagnostics',
       prevAria: 'Testimonio anterior',
       nextAria: 'Siguiente testimonio'
     },
@@ -163,6 +166,9 @@ const translations = {
       quote2: '“Gaspar is a great professional, has great communication with the team, and a strong ability to solve problems.”',
       name2: 'Fabio',
       role2: 'Programmer, Meteorbyte Studios',
+      quote3: '“I would recommend Gaspar to any team looking for a committed, resourceful developer who can turn an idea into a real product.”',
+      name3: 'Antonio Pérez-Campoamor Manzanaque',
+      role3: 'Co-founder and COO, Eterna Diagnostics',
       prevAria: 'Previous testimonial',
       nextAria: 'Next testimonial'
     },
